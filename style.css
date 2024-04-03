@@ -1,92 +1,53 @@
-* {
-    margin: 0;
-    /* padding: 0; */
-}
-
-nav {
-    padding: 2vh 2vw;
-    line-height: 1;
-    background-image: url(ATHQBGI.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    motion: fixed;
-}
-
-/* .hammersmith-one-regular */
-nav div {
-    text-align: right;
-    block-size: border-box;
-    color: rgb(237, 237, 37);
+.hammersmith-one-regular {
     font-family: "Hammersmith One", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 30px;
-    text-shadow: 1px -1px 2px black;
-}
-
-nav  a:link {
-    color: rgb(251, 239, 113);
-    text-decoration-thickness: 0;
-}
-nav a:visited {
-    color: rgb(251, 239, 113);
-}
-nav div a:hover {
-    padding: 3px;
-    background-color: rgba(255, 0, 0, 0.318);
-    border-radius: 10mm;
-}
-
-main {
-    background-image: url(redbgi.jpg);
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    background-size: 100%;
-    padding: 15px;
-}
-
-.blog {
-    border: 2px solid black;
-    padding: 10px;
-    text-align: left;
-    font-size: 12px;
-    font-family: "Hammersmith One", sans-serif;
+  }
+  
+  .berkshire-swash-regular {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
     font-style: normal;
-    color: rgb(237, 237, 37);
-    margin: 50px;
-    padding: 25px;
-    block-size: border-box;
-    text-shadow: 1px -1px 2px black;
-}
-
-footer table {
-    background-color: black;
-}
-
-.head {
-    padding: 10px;
-    text-align: center;
-    font-size: 12px;
-    color: rgb(237, 237, 37);
-    border-bottom: 1px solid  rgb(237, 237, 37);
-}
-
-footer td {
-    padding: 5px;
-    text-align: left;
-    block-size: border-box;
-    color: white;
-    background-color: black;
-    font-family: "Hammersmith One", sans-serif;
+  }
+  
+  .anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 10px;
-    width: 33.33vw;
-}
-
-footer a:link {
-    color: white;
-    text-decoration-thickness: 0;
-}
-footer a:visited {
-    color: white;
-}
+  }
+  
+  .rowdies-light {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .rowdies-regular {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rowdies-bold {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .rubik-doodle shadow-regular {
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .salsa-regular {
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .akronim-regular {
+    font-family: "Akronim", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
