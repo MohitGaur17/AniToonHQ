@@ -1,104 +1,152 @@
-.hammersmith-one-regular {
-    font-family: "Hammersmith One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .berkshire-swash-regular {
-    font-family: "Berkshire Swash", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .anton-regular {
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .rowdies-light {
-    font-family: "Rowdies", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .rowdies-regular {
-    font-family: "Rowdies", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .rowdies-bold {
-    font-family: "Rowdies", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .rubik-doodle shadow-regular {
-    font-family: "Rubik Doodle Shadow", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .salsa-regular {
-    font-family: "Salsa", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .akronim-regular {
-    font-family: "Akronim", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
+/* .hammersmith-one-regular {
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  ::selection {
-    color: white;
-    background-color: black;
-  }
+.berkshire-swash-regular {
+  font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  nav {
-    display: flex;
-    justify-content: space-around;
-    max-height: 100px;
-    background-color: red;
-    text-align: center;
-    align-items: center;
-    position: sticky;
-  }
+.rowdies-light {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 
-  img {
-    margin: 10px 20px;
-    max-width: 300px;
-  }
+.rowdies-regular {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .navList {
-    display: flex;
-    gap: 50px;
-    color: gold;
-  }
+.rowdies-bold {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
-  .navList > li {
-    list-style: none;
-    text-transform: uppercase;
-    font-weight: bold
-  }
+.rubik-doodle shadow-regular {
+  font-family: "Rubik Doodle Shadow", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .navList > li > a:link {
-    color: gold;
-  }
-  .navList > li > a:visited {
-    color: gold;
-  }
-  .navList > li > a:hover {
-    color: red;
-    background-color: yellow;
-    padding: 10px 10px;
-    border-radius: 20px;
-  }
+.salsa-regular {
+  font-family: "Salsa", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.akronim-regular {
+  font-family: "Akronim", system-ui;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+::selection {
+  color: white;
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  /* background-color: black; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  max-height: 100px;
+  width: 100vw;
+  background-color: red;
+  text-align: center;
+  align-items: center;
+  position: sticky;
+}
+
+nav > a > img {
+  margin: 10px px;
+  max-width: 300px;
+}
+
+.navList {
+  display: flex;
+  gap: 50px;
+  color: gold;
+}
+
+.navList > li {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold
+}
+
+.navList > li > a:link {
+  color: gold;
+}
+.navList > li > a:visited {
+  color: gold;
+}
+.navList > li > a:hover {
+  color: red;
+  background-color: yellow;
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+
+header {
+  background-image: url(ATHQBGheader.jpg);
+  /* opacity: 0.7; */
+  position: fixed;
+  background-size: 100%;
+  height: 50vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: auto;
+  padding: 5vw;
+  text-align: center;
+  align-items: center;
+}
+
+.headerSection {
+  text-align: center;
+}
+
+/* .header img {
+  max-width: 500px;
+} */
+
+.headerLine1 {
+  color: yellow;
+  font-weight: bolder;
+  font-size: 60px;
+  margin: 10px;
+  text-shadow: 0px 0px 25px rgb(0, 0, 0);
+  text-wrap: pretty;
+}
+.headerLine2 {
+  color: yellow;
+  font-weight: bolder;
+  font-size: 40px;
+  margin: 10px;
+  text-shadow: 0px 0px 25px rgb(0, 0, 0);
+  text-wrap: pretty;
+}
