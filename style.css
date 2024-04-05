@@ -51,3 +51,54 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  ::selection {
+    color: white;
+    background-color: black;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    max-height: 100px;
+    background-color: red;
+    text-align: center;
+    align-items: center;
+    position: sticky;
+  }
+
+  img {
+    margin: 10px 20px;
+    max-width: 300px;
+  }
+
+  .navList {
+    display: flex;
+    gap: 50px;
+    color: gold;
+  }
+
+  .navList > li {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold
+  }
+
+  .navList > li > a:link {
+    color: gold;
+  }
+  .navList > li > a:visited {
+    color: gold;
+  }
+  .navList > li > a:hover {
+    color: red;
+    background-color: yellow;
+    padding: 10px 10px;
+    border-radius: 20px;
+  }
