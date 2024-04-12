@@ -1,3 +1,26 @@
+// back to top
+const backToTop = document.querySelector('.backToTop');
+
+window.addEventListener('scroll', checkHeight)
+
+function checkHeight(){
+  if(window.scrollY > 200) {
+    backToTop.style.display = "flex"
+  }
+  else {
+    backToTop.style.display = "none"
+  }
+}
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+})
+
+// contact us form
+
 const form = document.querySelector('form');
 const fullName = document.getElementById("name");
 const email = document.getElementById("email");
