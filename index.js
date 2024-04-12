@@ -20,8 +20,7 @@ backToTop.addEventListener('click', () => {
 })
 
 // contact us form
-
-const form = document.querySelector('form');
+const form = document.querySelector("form");
 const fullName = document.getElementById("name");
 const email = document.getElementById("email");
 const subject = document.getElementById("subject");
@@ -35,27 +34,11 @@ function sendEmail(){
       Host : "smtp.elasticemail.com",
       Username : "mohitgaur@AniToonHQ.com",
       Password : "6071A1E40D33C00C54811B83388FA5A2D40E",
-      To : 'gaurmohit1703@gmail.com',
+      To : "gaurmohit1703@gmail.com",
       From : email.value,
       Subject : subject.value,
       Body : bodyMeassage,
   }).then(
-    message => {
-      if (message == "OK") {
-        Swal.fire({
-        title: "Message sent Successfully!",
-        text: "Click OK to Continue",
-        icon: "success"
-});
-      }
-    }
+    message => alert("Message sent successfully")
   );
 }
-
-function checkInputs() {
-  const items = document.querySelector(".item")
-}
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-})

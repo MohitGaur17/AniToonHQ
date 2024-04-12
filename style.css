@@ -90,7 +90,9 @@
 .scaleUpCenter:hover {
   transform: scale(1.1);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 nav {
   display: flex;
   justify-content: space-around;
@@ -528,17 +530,6 @@ footer > .footerSection > div {
   margin: 10px;
   padding: 10px;
 }
-/* 
-footer > .footerLeft {
-  width: 30vw;
-}
-footer > .footerCenter {
-  width: 40vw;
-}
-footer > .footerRight {
-  width: 30vw;
-}
- */
 
 footer > .footerLeft > .about > img {
   margin: 5px;
