@@ -133,17 +133,13 @@ nav > a > img {
 .navList > li > a:hover {
   color: red;
   background-color: yellow;
+  margin: 0px -10px 0px -10px;
   padding: 10px 10px;
   border-radius: 20px;
 }
 nav svg {
-  fill: gold;
-  width: 30px;
-  height: 30px;
-}
-nav svg:hover {
-  fill: gold;
-  width: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 body > div {
@@ -405,6 +401,42 @@ a:visited {
   color: gold;
 }
 
+.pagination {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center center;
+}
+.pagination svg {
+  fill: black;
+  background-color: rgba(255, 255, 255, 0.825);
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+.pagination p {
+  font-weight: 700;
+  font-size: 30px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.825);
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+.pagination p:hover {
+  color: gold;
+  background-color: red;
+}
+.pagination svg:hover {
+  fill: gold;
+  background-color: red;
+}
+.pagination .activePage {
+  color: gold;
+  background-color: red;
+}
+
 
 .sideBar {
   margin-top: 58px;
@@ -483,5 +515,127 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: rgb(20, 20, 20);
-  border-top: 4px solid white;
+  border-top: 4px solid yellow;
+}
+footer > .footerSection > div {
+  margin: 10px;
+  padding: 10px;
+}
+.footerSection h4 {
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 10px;
+  padding: 10px;
+}
+/* 
+footer > .footerLeft {
+  width: 30vw;
+}
+footer > .footerCenter {
+  width: 40vw;
+}
+footer > .footerRight {
+  width: 30vw;
+}
+ */
+
+footer > .footerLeft > .about > img {
+  margin: 5px;
+  /* padding: 5px; */
+  width: 300px;
+}
+footer > .footerLeft > .about > p {
+  margin: 5px 10px;
+  color: white;
+  font-size: 16px;
+}
+
+footer > .footerLeft > .topCatagories > div {
+  margin: 10px 20px;
+}
+footer > .footerLeft > .topCatagories > div >  a > .topCatagory {
+  color: white;
+  background-color: rgb(66, 66, 66);
+  font-weight: 600;
+  margin: 5px 2px;
+  padding: 3px 10px;
+  display: inline-block;
+  border-radius: 10px;
+}
+footer > .footerLeft > .topCatagories > div >  a > .topCatagory:hover {
+  color: black;
+  background-image: linear-gradient(to right, yellow 0%, #ff8400 100%);
+  font-weight: 600;
+}
+
+footer > .footerCenter > .trendingPosts {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer > .footerCenter > .trendingPosts > svg {
+  fill: yellow;
+  margin-top: 20px;
+  margin-left: -10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+footer > .footerCenter > .trendingPosts > div {
+  margin: 5px 20px;
+}
+footer > .footerCenter > .trendingPosts > div >  a > .trendingPost {
+  color: white;
+  background-color: rgb(66, 66, 66);
+  font-weight: 600;
+  margin: 10px 2px;
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+footer > .footerCenter > .trendingPosts > div >  a > .trendingPost:hover {
+  color: black;
+  background-image: linear-gradient(to right, yellow 0%, #ff8400 100%);
+  font-weight: 600;
+}
+
+footer > .footerRight > .contactUs > form {
+  margin: 10px 20px;
+  text-align: center;
+}
+footer > .footerRight > .contactUs > form > input {
+  width: 100%;
+  height: 30px;
+  margin: 10px auto;
+  padding: 10px;
+  color: white;
+  background-color: rgb(66, 66, 66);
+  font-size: 16px;
+  border: 0px;
+  border-radius: 10px;
+}
+footer > .footerRight > .contactUs > form > textarea {
+  width: 100%;
+  height: 40%;
+  margin: 10px auto;
+  padding: 10px;
+  color: white;
+  background-color: rgb(66, 66, 66);
+  font-size: 16px;
+  border: 0px;
+  border-radius: 10px;
+}
+footer > .footerRight > .contactUs > form > button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  /* color: red; */
+  background-color: yellow;
+  cursor: pointer;
+}
+footer > .footerRight > .contactUs > form > button:hover {
+  color: black;
+  background-image: linear-gradient(to right, yellow 0%, #ff8400 100%);
+  font-weight: 600;
 }
