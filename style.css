@@ -93,6 +93,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -482,8 +483,8 @@ a:visited {
 
 .popularPost {
   margin: 20px auto;
-  width: 400px;
-  height: 225px;
+  width: 22vw;
+  height: 20vh;
   object-fit: contain;
   overflow: hidden;
   /* border: 2px solid; */

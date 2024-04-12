@@ -39,28 +39,6 @@ function sendEmail(){
       Subject : subject.value,
       Body : bodyMeassage,
   }).then(
-<<<<<<< HEAD
-    message => alert("Message sent successfully")
+      message => alert("Message sent successfully")
   );
 }
-=======
-    message => {
-      if (message == "OK") {
-        Swal.fire({
-        title: "Message sent Successfully!",
-        text: "Click OK to Continue",
-        icon: "success"
-        });
-      }
-    }
-  );
-}
-
-function checkInputs() {
-  const items = document.querySelector(".item")
-}
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-})
->>>>>>> 6e11e3c3eeba95081f25f84844dba3b56f31d38b
