@@ -1,3 +1,15 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans * {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
 /* .hammersmith-one-regular {
   font-family: "Hammersmith One", sans-serif;
   font-weight: 400;
@@ -59,7 +71,24 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.scaleUpTop{
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transform-origin: top;
+}
+.scaleUpTop:hover {
+  transform: scale(1.1);
+}
+.scaleUpCenter{
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transform-origin: center;
+}
+.scaleUpCenter:hover {
+  transform: scale(1.1);
 }
 
 nav {
@@ -67,7 +96,7 @@ nav {
   justify-content: space-around;
   max-height: 100px;
   width: 100%;
-  /* background-color: red; */
+  background-color: red;
   text-align: center;
   align-items: center;
   position: sticky;
@@ -75,7 +104,7 @@ nav {
   flex-wrap: wrap;
   z-index: 1000000;
   margin-bottom: 0px;
-  background-image: linear-gradient(to right, rgb(255, 0, 0) 0%, #ee00ff 100%);
+  background-image: linear-gradient(to right, rgb(255, 0, 0) 0%, #0044ff 100%);
 }
 nav > a > img {
   margin: 10px px;
@@ -104,12 +133,13 @@ nav > a > img {
 .navList > li > a:hover {
   color: red;
   background-color: yellow;
+  margin: 0px -10px 0px -10px;
   padding: 10px 10px;
   border-radius: 20px;
 }
 nav svg {
-  color: yellow;
   width: 40px;
+  height: 40px;
 }
 
 body > div {
@@ -332,7 +362,7 @@ main {
   display: flex;
   background-color: rgba(255, 255, 255, 0.825);
   border-radius: 25px;
-  box-shadow: 0px 0px 50px; 
+  box-shadow: 0px 0px 50px 5px; 
   margin: 30px auto;
   padding: 10px;  
 }
@@ -371,6 +401,42 @@ a:visited {
   color: gold;
 }
 
+.pagination {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center center;
+}
+.pagination svg {
+  fill: black;
+  background-color: rgba(255, 255, 255, 0.825);
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+.pagination p {
+  font-weight: 700;
+  font-size: 30px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.825);
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+.pagination p:hover {
+  color: gold;
+  background-color: red;
+}
+.pagination svg:hover {
+  fill: gold;
+  background-color: red;
+}
+.pagination .activePage {
+  color: gold;
+  background-color: red;
+}
+
 
 .sideBar {
   margin-top: 58px;
@@ -379,14 +445,15 @@ a:visited {
   width: 95%;
   background-color: rgba(255, 255, 255, 0.825);
   border-radius: 20px;
+  box-shadow: 0px 0px 50px 5px; 
   margin-top: 40px;
   padding: 20px 20px 20px 20px;
 }
 .sideBarContent h3 {
-  color: red;
+  /* color: red; */
   font-weight: bolder;
   font-size: 25px;
-  text-shadow: 0px 0px 5px yellow;
+  /* text-shadow: 0px 0px 5px yellow; */
   text-wrap: pretty;
   text-align: center;
   padding-bottom: 10px;
@@ -404,19 +471,171 @@ a:visited {
   text-align: left;
 }
 .sideBarContent .catagoryElement:hover {
-  /* color: yellow;
-  background-color: rgb(255, 44, 44); */
   background-image: linear-gradient(to right, yellow 0%, #ff8400 100%);
-  transform: scale(1.1);
 
 }
 .catagoryElement div {
   padding: 2px 10px;
 }
 
-.popularPost img{
-  width: 95%;
+.popularPost {
+  margin: 20px auto;
+  width: 400px;
+  height: 225px;
+  object-fit: contain;
+  overflow: hidden;
+  /* border: 2px solid; */
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 2px;
 }
-.popularPost > div > a {
+.popularPost img{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.popularPost > div > a > h4 {
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.481);
+  text-shadow: 0px 0px 50px black;
+  text-wrap: pretty;
+  text-align: center;
+  position: relative;
+  top: -54px;
+}
+
+.sideBarContent .socialMediaPlugins svg {
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(20, 20, 20);
+  border-top: 4px solid yellow;
+}
+footer > .footerSection > div {
+  margin: 10px;
+  padding: 10px;
+}
+.footerSection h4 {
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 10px;
+  padding: 10px;
+}
+/* 
+footer > .footerLeft {
+  width: 30vw;
+}
+footer > .footerCenter {
+  width: 40vw;
+}
+footer > .footerRight {
+  width: 30vw;
+}
+ */
+
+footer > .footerLeft > .about > img {
+  margin: 5px;
+  /* padding: 5px; */
+  width: 300px;
+}
+footer > .footerLeft > .about > p {
+  margin: 5px 10px;
+  color: white;
+  font-size: 16px;
+}
+
+footer > .footerLeft > .topCatagories > div {
+  margin: 10px 20px;
+}
+footer > .footerLeft > .topCatagories > div >  a > .topCatagory {
+  color: white;
+  background-color: rgb(66, 66, 66);
+  font-weight: 600;
+  margin: 5px 2px;
+  padding: 3px 10px;
+  display: inline-block;
+  border-radius: 10px;
+}
+footer > .footerLeft > .topCatagories > div >  a > .topCatagory:hover {
   color: black;
+  background-image: linear-gradient(to right, yellow 0%, #ff8400 100%);
+  font-weight: 600;
+}
+
+footer > .footerCenter > .trendingPosts {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer > .footerCenter > .trendingPosts > svg {
+  fill: yellow;
+  margin-top: 20px;
+  margin-left: -10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+footer > .footerCenter > .trendingPosts > div {
+  margin: 5px 20px;
+}
+footer > .footerCenter > .trendingPosts > div >  a > .trendingPost {
+  color: white;
+  background-color: rgb(66, 66, 66);
+  font-weight: 600;
+  margin: 10px 2px;
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+footer > .footerCenter > .trendingPosts > div >  a > .trendingPost:hover {
+  color: black;
+  background-image: linear-gradient(to right, yellow 0%, #ff8400 100%);
+  font-weight: 600;
+}
+
+footer > .footerRight > .contactUs > form {
+  margin: 10px 20px;
+  text-align: center;
+}
+footer > .footerRight > .contactUs > form > input {
+  width: 100%;
+  height: 30px;
+  margin: 10px auto;
+  padding: 10px;
+  color: white;
+  background-color: rgb(66, 66, 66);
+  font-size: 16px;
+  border: 0px;
+  border-radius: 10px;
+}
+footer > .footerRight > .contactUs > form > textarea {
+  width: 100%;
+  height: 40%;
+  margin: 10px auto;
+  padding: 10px;
+  color: white;
+  background-color: rgb(66, 66, 66);
+  font-size: 16px;
+  border: 0px;
+  border-radius: 10px;
+}
+footer > .footerRight > .contactUs > form > button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  /* color: red; */
+  background-color: yellow;
+  cursor: pointer;
+}
+footer > .footerRight > .contactUs > form > button:hover {
+  color: black;
+  background-image: linear-gradient(to right, yellow 0%, #ff8400 100%);
+  font-weight: 600;
 }
