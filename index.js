@@ -46,7 +46,7 @@ function sendEmail(){
         title: "Message sent Successfully!",
         text: "Click OK to Continue",
         icon: "success"
-});
+        });
       }
     }
   );
