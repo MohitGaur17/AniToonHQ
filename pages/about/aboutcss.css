@@ -1,0 +1,155 @@
+::selection {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.267) ;
+  }
+
+  html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(59, 55, 71);
+  }
+
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    max-height: 100px;
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    background: linear-gradient(to top, transparent , rgba(0, 0, 0, 0.548), rgb(0, 0, 0) 100%);
+    
+    z-index: 1000000;
+  }
+  nav > a > img {
+    margin: 10px px;
+    max-width: 300px;
+    
+    background-size: cover;
+    filter: hue-rotate(140deg);
+
+
+    
+  }
+  .navList {
+    display: flex;
+    gap: 50px;
+    color: #3badcc;
+    flex-wrap: wrap;
+    align-items: center
+  }
+  .navList > li {
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold
+  }
+  .navList > li > a:link {
+    color: #3badcc;
+    text-decoration: none;
+    transition: 0.15s ease-in;
+  }
+  .navList > li > a:visited {
+    color: #3badcc;
+  }
+  .navList > li > a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #3badcc;
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin: 0px -10px 0px -10px;
+  }
+  nav svg {
+    color: #3badcc;
+    background-color: transparent;
+    width: 40px;
+  }
+  span a {
+    text-decoration: none;
+  }
+
+  /* hello text  */
+.hellotxt{
+    text-align:left ;
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Copperplate, fantasy;
+    position: absolute;
+    bottom: 10px;
+    z-index: 200;
+}
+.hellotxt > h1{
+    background: url("../../assets/backgrounds/text-backgroung.jpg")  ;
+    background-size: cover;
+    
+    font-size: 120px;
+    margin: 0px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text ;
+    filter:hue-rotate(120deg);
+    animation: movebackground 40s linear infinite ;
+
+}
+.hellotxt > h2{
+    font-size: 65px;
+    margin: 0px;
+    margin-top: -30px;
+    background: url("../../assets/backgrounds/text-backgroung.jpg")  ;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text ;
+    filter: brightness(1.6);
+
+    animation: movebackground 40s linear infinite ;
+    
+}
+@keyframes movebackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; } /* Adjust the end position based on the desired effect */
+  }
+
+
+  /* background image anime */
+  .animebg{
+    width: 100%;
+    background: url("../../assets/backgrounds/tenjiro-demon-slayer.jpg");
+    background-size: cover;
+    height: 104vh;
+    z-index: 1;
+    position:absolute;
+    top: 0dvh;
+    padding: 0px;
+    box-sizing: border-box;
+    
+  }
+
+
+/* main section */
+main{
+}
+.tile1{
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    padding: 0px;
+    top: 100vh;
+
+    background: rgb(189, 189, 189);
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0 -30px 100px;
+    overflow: hidden;
+}
+.tiles{
+    z-index: 300;
+}
+
+
+
