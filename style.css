@@ -121,6 +121,7 @@ nav {
   z-index: 1000000;
   margin-bottom: 0px;
   background-image: linear-gradient(to right, rgb(255, 0, 0) 0%, #0044ff 100%);
+  min-height: 7vh;
 }
 
 nav>a>img {
@@ -140,6 +141,7 @@ nav>a>img {
   list-style: none;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -160,9 +162,23 @@ nav>a>img {
   border-radius: 20px;
 }
 
-nav svg {
+/* nav svg {
   width: 40px;
   height: 40px;
+} */
+
+#sideBarActive {
+  display: none;
+}
+
+.openSideBarBtn, .closeSideBarBtn {
+  display: none;
+}
+
+nav label svg {
+  fill: gold;
+  width: 50px;
+  height: 50px;
 }
 
 .section1 {
@@ -696,7 +712,45 @@ footer .footerBottom>h5 {
 
 /* Your CSS rules for extra small devices go here */
 @media only screen and (max-width: 600px) {
-  /* nav tag */
+  .navList { 
+    font-size: 20px;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    width: 100%;
+    background-color: red;
+    transition: 0.5s ease-out;
+  }
+  .navList > a {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+  }
+  .navList > a > li {
+    margin: 50px auto;
+    padding: 50px;
+  }
+
+  .openSideBarBtn, .closeSideBarBtn {
+    padding: 20px 30px;
+    display: block;
+  }
+
+  #sideBarActive:checked ~ .navList {
+    right: 0;
+  }
+  #sideBarActive:checked ~ #overlay {
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
 
   .section1 {
     background-size: 200%;
@@ -766,6 +820,49 @@ footer .footerBottom>h5 {
 
 /* Your CSS rules for small devices go here */
 @media only screen and (min-width: 600px) and (max-width: 992px) {
+
+  .navList { 
+    flex-direction: column;
+    /* align-items: flex-start; */
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    width: 100%;
+    background-color: red;
+    transition: 0.5s ease-out;
+  }
+  .navList a {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+  }
+  .navList > li > a {
+    margin: 50px auto;
+    padding: 50px;
+  }
+
+  .openSideBarBtn, .closeSideBarBtn {
+    padding: 20px 30px;
+    display: block;
+  }
+
+  #sideBarActive:checked ~ .navList {
+    right: 0;
+  }
+  #sideBarActive:checked ~ #overlay {
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+  .navList>li {
+    font-size: 20px;
+  }
+
   .section1 {
     background-size: 200%;
     height: 100vh;
@@ -830,6 +927,10 @@ footer .footerBottom>h5 {
 
 /* Your CSS rules for large devices go here */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .navList>li {
+    font-size: 20px;
+  }
+
   .section1 {
     background-size: 150%;
     height: 100vh;
@@ -896,6 +997,10 @@ footer .footerBottom>h5 {
 
 /* Your CSS rules for extra large devices go here */
 @media only screen and (min-width: 1200px) and (max-width: 2000px) {
+  .navList>li {
+    font-size: 20px;
+  }
+
   main {
     grid-template-columns: 3fr 1fr;
   }
@@ -919,6 +1024,10 @@ footer .footerBottom>h5 {
 }
 
 @media only screen and (min-width: 2000px) and (max-width: 5000px) {
+  .navList>li {
+    font-size: 30px;
+  }
+
   .headerLine1 {
     font-size: 80px;
   }
@@ -967,6 +1076,10 @@ footer .footerBottom>h5 {
 }
 
 @media only screen and (min-width: 5000px) {
+  .navList>li {
+    font-size: 40px;
+  }
+
   .headerLine1 {
     font-size: 150px;
   }
