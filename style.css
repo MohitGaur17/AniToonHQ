@@ -1,3 +1,5 @@
+/* Fonts */
+
 /* // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 300 to 800
 
@@ -64,6 +66,8 @@
   font-style: normal;
 } */
 
+/* theme */
+
 ::selection {
   color: white;
   background-color: black;
@@ -93,6 +97,9 @@
 html {
   scroll-behavior: smooth;
 }
+/* body {
+  width: 100% !important;
+} */
 
 
 
@@ -160,6 +167,7 @@ nav svg {
   position: relative;
   background-size: 100%;
   height: 100vh;
+  min-height: 850px;
 }
 .header {
   display: flex;
@@ -204,13 +212,14 @@ nav svg {
 .section1 > h2 {
   color: yellow;
   font-weight: bolder;
-  font-size: 40px;
-  margin: 10px;
+  font-size: 50px;
+  /* margin: 10px; */
+  margin-bottom: 20px;
   text-shadow: 0px 0px 25px rgb(0, 0, 0);
   text-wrap: pretty;
   text-align: center;
 }
-.animeFeatured {
+.featuredPosts {
   width: 50%;
   height: 50vh;
   background-color:  rgba(213, 213, 213, 0.5);
@@ -221,8 +230,9 @@ nav svg {
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
-.animeFeatured > h3 {
+.featuredPosts > h3 {
   color: yellow;
+  position: sticky;
   font-weight: bolder;
   font-size: 30px;
   margin: 10px;
@@ -230,7 +240,7 @@ nav svg {
   text-wrap: pretty;
   text-align: center;
 }
-.animeFeatured > div {
+.featuredPosts > div {
   background-color: rgba(255, 255, 255, 0.677);
   width: 90%;
   text-align: center;
@@ -238,86 +248,22 @@ nav svg {
   border-radius: 25px;
   box-shadow: 0px 0px 10px;
 }
-.animeFeatured > div > a > img {
+.featuredPosts > div > a > img {
   width: 95%;
   border-radius: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.animeFeatured > div > h4 {
+.featuredPosts > div > h4 {
   color: red;
   font-weight: bolder;
   font-size: 25px;
-  margin: 0px auto;
+  margin: 0px 10px;
   text-shadow: 0px 0px 5px yellow;
   text-wrap: pretty;
   text-align: center;
 }
-.animeFeatured > div > p {
-  color: black;
-  font-weight: 400;
-  font-size: 20px;
-  margin: 10px;
-  padding: 20px;
-  text-wrap: pretty;
-  text-align: left;
-}
-.animeFeatured > div > .readMore {
-  font-weight: bold;
-  font-size: 300;
-  color: rgb(0, 153, 255);
-  background-color: rgba(255, 0, 0, 0.495);
-  border-radius: 10mm;
-  margin: auto;
-  margin-bottom: 10px;
-  padding: 10px;
-}
-
-
-.cartoonFeatured {
-  width: 50%;
-  height: 50vh;
-  background-color:  rgba(213, 213, 213, 0.5);
-  border-radius: 50px;
-  box-shadow: 0px 0px 50px; 
-  scroll-behavior: auto;
-  overflow: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
-.cartoonFeatured > h3 {
-  color: yellow;
-  font-weight: bolder;
-  font-size: 30px;
-  margin: 10px;
-  text-shadow: 0px 0px 25px rgb(0, 0, 0);
-  text-wrap: pretty;
-  text-align: center;
-}
-.cartoonFeatured > div {
-  background-color: rgba(255, 255, 255, 0.677);
-  width: 90%;
-  text-align: center;
-  margin: 10px auto;
-  border-radius: 25px;
-  box-shadow: 0px 0px 10px;
-}
-.cartoonFeatured > div > a > img {
-  width: 95%;
-  border-radius: 20px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.cartoonFeatured > div > h4 {
-  color: red;
-  font-weight: bolder;
-  font-size: 25px;
-  margin: 0px auto;
-  text-shadow: 0px 0px 5px yellow;
-  text-wrap: pretty;
-  text-align: center;
-}
-.cartoonFeatured > div > p {
+.featuredPosts > div > p {
   color: black;
   font-weight: 400;
   font-size: 20px;
@@ -427,6 +373,7 @@ a:visited {
   justify-content: center;
   align-items: center;
   text-align: center center;
+  margin-top: 80px;
 }
 .pagination svg {
   fill: black;
@@ -544,7 +491,7 @@ footer .footerTop {
   border-top: 4px solid yellow;
 }
 footer .footerSection > div {
-  /* margin: 5px; */
+  margin: 5px;
   padding: 5px;
 }
 .footerSection h4 {
@@ -559,7 +506,7 @@ footer .footerSection > div {
 footer .footerLeft,
 footer .footerCenter,
 footer .footerRight {
-  width: 30vw;
+  width: 33vw;
 }
 
 
@@ -625,15 +572,15 @@ footer .footerCenter > .trendingPosts > div >  a > .trendingPost:hover {
 
 
 footer .footerRight > .contactUs > form {
-  /* margin: 10px; */
+  margin: 10px;
   padding: 10px;
   text-align: center;
   box-sizing: border-box;
 }
 footer .footerRight > .contactUs > form > input {
-  width: 80%;
+  width: 90%;
   height: 30px;
-  /* margin: 10px auto; */
+  margin: 10px auto;
   padding: 10px;
   color: white;
   background-color: rgb(66, 66, 66);
@@ -642,9 +589,9 @@ footer .footerRight > .contactUs > form > input {
   border-radius: 10px;
 }
 footer .footerRight > .contactUs > form > textarea {
-  width: 80%;
-  height: 40%;
-  /* margin: 10px auto; */
+  width: 90%;
+  height: 50%;
+  margin: 10px auto;
   padding: 10px;
   color: white;
   background-color: rgb(66, 66, 66);
@@ -653,7 +600,7 @@ footer .footerRight > .contactUs > form > textarea {
   border-radius: 10px;
 }
 footer .footerRight > .contactUs > form > button {
-  /* margin: 10px; */
+  margin: 10px;
   padding: 10px 20px;
   font-size: 18px;
   font-weight: 600;
@@ -721,7 +668,3 @@ footer .footerBottom > h5 {
 } 
 
 */
-
-body {
-  width: 100% !important;
-}
