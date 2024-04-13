@@ -94,6 +94,11 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
+
+
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -116,7 +121,7 @@ nav > a > img {
 .navList {
   display: flex;
   gap: 30px;
-  color: gold;
+  color: yellow;
   flex-wrap: wrap;
   align-items: center
 }
@@ -127,11 +132,11 @@ nav > a > img {
   font-weight: bold
 }
 .navList > li > a:link {
-  color: gold;
+  color: yellow;
   text-decoration: none;
 }
 .navList > li > a:visited {
-  color: gold;
+  color: yellow;
 }
 .navList > li > a:hover {
   color: red;
@@ -145,7 +150,11 @@ nav svg {
   height: 40px;
 }
 
-body > div {
+
+
+
+
+.section1 {
   background-image: url(images/ATHQBG1.jpg);
   background-attachment: fixed;
   position: relative;
@@ -180,6 +189,8 @@ body > div {
   text-shadow: 0px 0px 25px rgb(0, 0, 0);
   text-wrap: pretty;
 }
+
+
 
 .featured {
   margin: 10px auto;
@@ -262,6 +273,7 @@ body > div {
   padding: 10px;
 }
 
+
 .cartoonFeatured {
   width: 50%;
   height: 50vh;
@@ -317,9 +329,9 @@ body > div {
 
 .readMore {
   font-weight: bold;
-  font-size: 300;
-  background-color: rgb(255, 0, 0);
-  text-shadow:  0px 0px 5px black;
+  font-size: 16px;
+  background-color: rgb(233, 3, 3);
+  /* text-shadow:  0px 0px 5px black; */
   border-radius: 10mm;
   margin: auto;
   margin-bottom: 10px;
@@ -334,6 +346,10 @@ body > div {
   color: gold;
 }
 
+
+
+
+
 main {
   background-image: url(images/ATHQBG2.jpg);
   background-attachment: fixed;
@@ -345,7 +361,7 @@ main {
   align-items: start;
   justify-content: center;
   text-align: center;
-  box-shadow: 0px 0px 10px;
+  /* box-shadow: 0px 0px 10px; */
 }
 .mainSection {
   width: 95%;
@@ -360,6 +376,7 @@ main {
   text-align: left;
   margin: 20px;
 }
+
 
 .post {
   display: flex;
@@ -441,6 +458,8 @@ a:visited {
 }
 
 
+
+
 .sideBar {
   margin-top: 58px;
 }
@@ -481,6 +500,8 @@ a:visited {
   padding: 2px 10px;
 }
 
+
+
 .popularPost {
   margin: 20px auto;
   width: 22vw;
@@ -509,20 +530,22 @@ a:visited {
   top: -54px;
 }
 
+
 .sideBarContent .socialMediaPlugins svg {
   width: 50px;
   height: 50px;
 }
 
-footer {
+
+footer .footerTop {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: rgb(20, 20, 20);
   border-top: 4px solid yellow;
 }
-footer > .footerSection > div {
-  margin: 10px;
-  padding: 10px;
+footer .footerSection > div {
+  /* margin: 5px; */
+  padding: 5px;
 }
 .footerSection h4 {
   color: white;
@@ -532,21 +555,30 @@ footer > .footerSection > div {
   padding: 10px;
 }
 
-footer > .footerLeft > .about > img {
+
+footer .footerLeft,
+footer .footerCenter,
+footer .footerRight {
+  width: 30vw;
+}
+
+
+footer .footerLeft > .about > img {
   margin: 5px;
   /* padding: 5px; */
   width: 300px;
 }
-footer > .footerLeft > .about > p {
+footer .footerLeft > .about > p {
   margin: 5px 10px;
   color: white;
   font-size: 16px;
 }
 
-footer > .footerLeft > .topCatagories > div {
+
+footer .footerLeft > .topCatagories > div {
   margin: 10px 20px;
 }
-footer > .footerLeft > .topCatagories > div >  a > .topCatagory {
+footer .footerLeft > .topCatagories > div >  a > .topCatagory {
   color: white;
   background-color: rgb(66, 66, 66);
   font-weight: 600;
@@ -555,17 +587,18 @@ footer > .footerLeft > .topCatagories > div >  a > .topCatagory {
   display: inline-block;
   border-radius: 10px;
 }
-footer > .footerLeft > .topCatagories > div >  a > .topCatagory:hover {
+footer .footerLeft > .topCatagories > div >  a > .topCatagory:hover {
   color: black;
   background-image: linear-gradient(to right, yellow 0%, #ff8400 100%);
   font-weight: 600;
 }
 
-footer > .footerCenter > .trendingPosts {
+
+footer .footerCenter > .trendingPosts {
   display: flex;
   flex-wrap: wrap;
 }
-footer > .footerCenter > .trendingPosts > svg {
+footer> .footerCenter > .trendingPosts > svg {
   fill: yellow;
   margin-top: 20px;
   margin-left: -10px;
@@ -573,10 +606,10 @@ footer > .footerCenter > .trendingPosts > svg {
   height: 50px;
   text-align: center;
 }
-footer > .footerCenter > .trendingPosts > div {
+footer .footerCenter > .trendingPosts > div {
   margin: 5px 20px;
 }
-footer > .footerCenter > .trendingPosts > div >  a > .trendingPost {
+footer .footerCenter > .trendingPosts > div >  a > .trendingPost {
   color: white;
   background-color: rgb(66, 66, 66);
   font-weight: 600;
@@ -584,20 +617,23 @@ footer > .footerCenter > .trendingPosts > div >  a > .trendingPost {
   padding: 3px 10px;
   border-radius: 10px;
 }
-footer > .footerCenter > .trendingPosts > div >  a > .trendingPost:hover {
+footer .footerCenter > .trendingPosts > div >  a > .trendingPost:hover {
   color: black;
   background-image: linear-gradient(to right, yellow 0%, #ff8400 100%);
   font-weight: 600;
 }
 
-footer > .footerRight > .contactUs > form {
-  margin: 10px 20px;
+
+footer .footerRight > .contactUs > form {
+  /* margin: 10px; */
+  padding: 10px;
   text-align: center;
+  box-sizing: border-box;
 }
-footer > .footerRight > .contactUs > form > input {
-  width: 100%;
+footer .footerRight > .contactUs > form > input {
+  width: 80%;
   height: 30px;
-  margin: 10px auto;
+  /* margin: 10px auto; */
   padding: 10px;
   color: white;
   background-color: rgb(66, 66, 66);
@@ -605,10 +641,10 @@ footer > .footerRight > .contactUs > form > input {
   border: 0px;
   border-radius: 10px;
 }
-footer > .footerRight > .contactUs > form > textarea {
-  width: 100%;
+footer .footerRight > .contactUs > form > textarea {
+  width: 80%;
   height: 40%;
-  margin: 10px auto;
+  /* margin: 10px auto; */
   padding: 10px;
   color: white;
   background-color: rgb(66, 66, 66);
@@ -616,8 +652,8 @@ footer > .footerRight > .contactUs > form > textarea {
   border: 0px;
   border-radius: 10px;
 }
-footer > .footerRight > .contactUs > form > button {
-  margin: 10px;
+footer .footerRight > .contactUs > form > button {
+  /* margin: 10px; */
   padding: 10px 20px;
   font-size: 18px;
   font-weight: 600;
@@ -626,11 +662,41 @@ footer > .footerRight > .contactUs > form > button {
   background-color: yellow;
   cursor: pointer;
 }
-footer > .footerRight > .contactUs > form > button:hover {
+footer .footerRight > .contactUs > form > button:hover {
   color: black;
   background-image: linear-gradient(to right, yellow 0%, #ff8400 100%);
   font-weight: 600;
 }
+
+
+footer .footerBottom {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 25px;
+}
+footer .footerBottom > span {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 5px;
+  padding: 5px;
+} 
+footer .footerBottom span a:link {
+  color: white;
+}
+footer .footerBottom span a:visited {
+  color: white;
+}
+footer .footerBottom span a:hover {
+  color: gold;
+}
+footer .footerBottom > h5 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px auto;
+  padding: 5px;
+} 
+
 
 .backToTop {
   display: none;
@@ -645,4 +711,17 @@ footer > .footerRight > .contactUs > form > button:hover {
 }
 .backToTop:hover {
   fill: yellow;
+}
+
+
+/* 
+
+@media screen and (max-width) {
+  
+} 
+
+*/
+
+body {
+  width: 100% !important;
 }
