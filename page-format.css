@@ -63,21 +63,21 @@
   }
   .pageH5 {
     font-size: 24px;
-    font-weight: bolder;
+    font-weight: 600;
     text-wrap: pretty;
     text-align: left;
     margin: 10px;
   }
   .pageH6 {
     font-size: 24px;
-    font-weight: bolder;
+    font-weight: 600;
     text-wrap: pretty;
     text-align: left;
     margin: 10px;
   }
   .pagep {
     font-size: 18px;
-    font-weight: bolder;
+    font-weight: 600;
     text-wrap: pretty;
     text-align: left;
     margin: 10px;
