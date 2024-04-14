@@ -39,7 +39,7 @@
         <li class="scaleUpCenter"><a href="index.html">home</a></li>
         <li class="scaleUpCenter"><a href="index-1.html">news</a></li>
         <li class="scaleUpCenter"><a href="about-us.html">about</a></li>
-        <li class="scaleUpCenter"><a href="contact-us">contact us</a></li>
+        <li class="scaleUpCenter"><a href="#contactUs">contact us</a></li>
       </ul>
       <label for="sideBarActive" class="openSideBarBtn">
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
@@ -128,7 +128,9 @@
             <div class="pageH4">
               <h4>Watch this video</h4>
             </div>
-            <iframe width="100%" height="370" src="https://www.youtube.com/embed/fzYt1KxFzrc?si=HfN5Rk4rr6Zf2nAp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="youtubeVideoContainer">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/fzYt1KxFzrc?si=LnrOHHe5TNX3-OUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <div class="pageH3">
               <h3>The Plot</h3>
             </div>
@@ -139,7 +141,7 @@
             <div class="pageH4">
               <h4>Meet the Characters</h4>
             </div>
-            <ol style="padding: 0px 30px;">
+            <ol>
               <li><b>Ash Ketchum</b>: Our intrepid hero, Ash, and his loyal partner Pikachu are ready to face any challenge.</li>
               <li><b>Risa</b>: A young athlete whose running days might be behind her but still holds immense determination.</li>
               <li><b>Toren</b>: A compulsive liar with a mysterious past.</li>
@@ -147,6 +149,7 @@
               <li><b>Margo</b>: A bitter old woman who carries secrets from her past.</li>
               <li><b>Margo’s Granddaughter, Erika</b>: A little girl with a big secret that could change everything.</li>
             </ol>
+            <br>
             <div class="pageH4">
               <h4>The Mythical Pokémon Zeraora</h4>
             </div>
@@ -383,7 +386,7 @@
 
         <!-- contact us -->
         <div class="footerSection footerRight" data-aos="fade-down" data-aos-delay="200">
-          <div class="contactUs">
+          <div class="contactUs" id="contactUs">
             <h4>Contact Us</h4>
             <form id="form" action="#" onsubmit="sendEmail(); reset(); return false;">
               <input type="text" name="Name" id="name" placeholder="Enter your name here..." required>
