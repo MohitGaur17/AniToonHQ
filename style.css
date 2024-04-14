@@ -830,7 +830,7 @@ footer .footerBottom>h5 {
     z-index: 10;
     width: 100%;
     background-color: red;
-    transition: 0.5s ease-out;
+    transition: 0.2s ease-out;
   }
   .navList a {
     box-sizing: border-box;

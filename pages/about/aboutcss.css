@@ -1,4 +1,4 @@
-::selection {
+/* ::selection {
     color: white;
     background-color: rgba(0, 0, 0, 0.267) ;
   }
@@ -17,7 +17,7 @@
     justify-content: space-around;
     max-height: 100px;
     width: 100%;
-    /* background-color: red; */
+    /* background-color: red; 
     text-align: center;
     align-items: center;
     position: sticky;
@@ -75,7 +75,7 @@
     text-decoration: none;
   }
 
-  /* hello text  */
+  /* hello text  
 .hellotxt{
     text-align:left ;
     margin-left: 40px;
@@ -113,11 +113,11 @@
 }
 @keyframes movebackground {
     0% { background-position: 0 0; }
-    100% { background-position: 0 100%; } /* Adjust the end position based on the desired effect */
+    100% { background-position: 0 100%; } /* Adjust the end position based on the desired effect 
   }
 
 
-  /* background image anime */
+  /* background image anime 
   .animebg{
     width: 100%;
     background: url("../../assets/backgrounds/tenjiro-demon-slayer.jpg");
@@ -131,8 +131,7 @@
     
   }
 
-
-/* main section */
+/* main section 
 main{
 }
 .tile1{
@@ -149,7 +148,47 @@ main{
 }
 .tiles{
     z-index: 300;
+} */
+
+body, html{
+  margin: 0px;
+  padding : 0px;
 }
 
+/* .contributer{
+  margin-top: 40px;
+}
+
+.contributer > ul{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 5px dotted black; 
+  list-style-type: none;
+  
+  gap: 10rem;
+}
+
+.contributer > ul > li{
+  width: 160px;
+  height: 160px;
+  border: 10px solid black;
+  border-radius: 100%;
+  flex-shrink: 0;
+  
+}
+
+@media screen and (max-width : 1280px) and (min-width : 600px){
+
+  .contributer{
+  }
+  .contributer > ul{
+    flex-flow: column wrap;
+    li{
+      aspect-ratio: 1;
+    }
+  }
+
+} */
 
 
