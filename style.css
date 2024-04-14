@@ -721,6 +721,7 @@ footer .footerBottom>h5 {
     right: -100%;
     z-index: 10;
     width: 100%;
+    min-height: 100%;
     background-color: red;
     transition: 0.5s ease-out;
   }
@@ -829,6 +830,7 @@ footer .footerBottom>h5 {
     right: -100%;
     z-index: 10;
     width: 100%;
+    min-height: 100%;
     background-color: red;
     transition: 0.5s ease-out;
   }
