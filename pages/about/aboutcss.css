@@ -371,7 +371,6 @@ span2{
     font-size: 3rem;
     font-family: "Anton", sans-serif;
     font-weight: 200;
-    text-wrap: 1;
     border-bottom: 3px solid black;
     background: linear-gradient(to right, red , purple, blue 50% , purple ,red );
     background-repeat: 0;
