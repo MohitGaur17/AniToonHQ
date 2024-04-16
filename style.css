@@ -182,7 +182,7 @@ nav label svg {
 }
 
 .section1 {
-  background-image: url(images/ATHQBG1.jpg);
+  background-image: url(images/ATHQBG1.webp);
   background-attachment: fixed;
   position: relative;
   background-size: 100%;
@@ -325,7 +325,7 @@ nav label svg {
 }
 
 main {
-  background-image: url(images/ATHQBG2.jpg);
+  background-image: url(images/ATHQBG2.webp);
   background-attachment: fixed;
   position: relative;
   background-size: 100%;
@@ -1070,6 +1070,10 @@ footer .footerBottom>h5 {
     font-size: 20px;
   }
 
+  .sideBar {
+    margin-top: 120px;
+  }
+
   .popularPost {
     width: 95%;
     height: 20vh;
@@ -1125,6 +1129,10 @@ footer .footerBottom>h5 {
   .popularPost {
     width: 95%;
     height: 20vh;
+  }
+
+  .sideBar {
+    margin-top: 190px;
   }
 
   .sideBarContent h3 {

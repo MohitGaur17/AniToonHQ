@@ -42,3 +42,12 @@ function sendEmail(){
       message => alert("Message sent successfully")
   );
 }
+
+
+// owl carousel
+
+$('.owlCarousel').owlCaraousel({
+  loop:true,
+  autoplay: true,
+  autoplayTimeout: 5000,
+})
