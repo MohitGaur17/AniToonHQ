@@ -585,7 +585,7 @@ footer .footerCenter>.trendingPosts {
   flex-wrap: wrap;
 }
 
-footer>.footerCenter>.trendingPosts>svg {
+footer .footerCenter> .trendingPosts> svg {
   fill: yellow;
   margin-top: 20px;
   margin-left: -10px;
@@ -594,7 +594,7 @@ footer>.footerCenter>.trendingPosts>svg {
   text-align: center;
 }
 
-footer .footerCenter>.trendingPosts>div {
+footer .footerCenter>.trendingPosts> div {
   margin: 5px 20px;
 }
 
