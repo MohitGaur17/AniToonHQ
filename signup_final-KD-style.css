@@ -10,7 +10,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 * {
@@ -217,7 +216,8 @@ body {
 
 
 
-/* Responsive */
+/* Responsive Kovid's starts */
+
 @media screen and (max-width: 500px) {
     .form .column {
         flex-wrap: wrap;
@@ -229,7 +229,7 @@ body {
     flex-wrap: wrap;
 }
 
-
+/* Responsive Kovid's ends */
 
 
 
@@ -350,16 +350,13 @@ nav label svg {
     min-height: 850px;
 }
 
+/* Nav bar ends */
 
 
+/* Responsive Mohit's starts  */
 
-/* -------------------------------*/
-
-
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 410px) {
     .navList {
-        font-size: 20px;
         flex-direction: column;
         /* align-items: flex-start; */
         position: fixed;
@@ -369,20 +366,92 @@ nav label svg {
         width: 100%;
         min-height: 100%;
         background-color: red;
-        transition: 0.5s ease-out;
+        transition: 0.2s ease-out;
     }
 
-    .navList>a {
+    nav>a>img {
         box-sizing: border-box;
         height: auto;
-        width: 100%;
-        padding: 10px 10px;
+        width: 210px;
+        padding: 20px 3px;
         justify-content: flex-start;
     }
 
-    .navList>a>li {
+    .navList>li>a {
         margin: 50px auto;
         padding: 50px;
+    }
+
+    .openSideBarBtn,
+    .closeSideBarBtn {
+        padding: 2px 3px;
+        display: block;
+    }
+
+    #sideBarActive:checked~.navList {
+        right: 0;
+    }
+
+    #sideBarActive:checked~#overlay {
+        min-height: 100%;
+        min-width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .navList>li {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 410px) and (max-width: 600px) {
+    .navList {
+        flex-direction: column;
+        /* align-items: flex-start; */
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 100%;
+        min-height: 100%;
+        background-color: red;
+        transition: 0.2s ease-out;
+    }
+
+    .navList a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .navList>li>a {
+        margin: 50px auto;
+        padding: 50px;
+    }
+
+    .openSideBarBtn,
+    .closeSideBarBtn {
+        padding: 20px 30px;
+        display: block;
+    }
+
+    #sideBarActive:checked~.navList {
+        right: 0;
+    }
+
+    #sideBarActive:checked~#overlay {
+        min-height: 100%;
+        min-width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .navList>li {
+        font-size: 20px;
     }
 }
 
@@ -459,7 +528,6 @@ nav label svg {
         font-size: 40px;
     }
 }
-
 
 
 
