@@ -218,11 +218,37 @@ body {
 
 /* Responsive Kovid's starts */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 880px) {
     .form .column {
         flex-wrap: wrap;
     }
 }
+
+@media screen and (max-height: 684px) and (min-width: 410px) and (max-width: 992px) {
+    .skewed{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .skewed{
+        margin-top: 100px;
+    }
+}
+
+/* @media screen and (min-height: 650px) and (min-width: 600px){
+    .skewed{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .text>.container{
+        
+    }
+
+} */
+
 
 .form :where(.gender-option, .gender) {
     row-gap: 15px;
@@ -372,7 +398,7 @@ nav label svg {
     nav>a>img {
         box-sizing: border-box;
         height: auto;
-        width: 210px;
+        width: 294px;
         padding: 20px 3px;
         justify-content: flex-start;
     }
@@ -529,6 +555,7 @@ nav label svg {
     }
 }
 
+/* Responsive Mohit's ends */
 
 
 
